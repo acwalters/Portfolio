@@ -1,0 +1,190 @@
+
+body{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Abhaya Libre', serif;
+    display: grid;
+    
+}
+h1, h2, h3 {
+    font-family: 'Handlee', cursive;
+    text-align: center;
+}
+h1 {
+    font-size: 70px;
+    text-shadow: 2px 2px white;
+	padding: 50px;
+}
+h2 {
+    margin: 0;
+    color: white;
+    margin-bottom: 0%;
+}
+
+h3 {
+    color: black;
+    margin-bottom: 0%;
+}
+p {
+	text-align: center;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+}
+/*Navigation
+--------------------*/
+.nav img {
+    float: left;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 13px;
+    
+}
+     .nav ul {                                   
+     text-align: left;                    
+     list-style: none;                  
+     }
+     .nav ul li {                                
+    font: 18px 'Abhaya Libre', serif; 
+     display: inline-block;           
+     position: relative;                
+     padding: 15px 5px;   
+     cursor: pointer;
+     margin-left: 20px;                 
+     }
+     .nav ul li:hover {                       
+     background: rgb(130, 189, 214);             
+     color: #fff;                       
+     }
+     .nav ul li ul {                           
+     padding: 0;                       
+     position: absolute;             
+     top: 48px; 
+     left: -10000px;                        
+     width: 140px;             
+     }
+     .nav ul li ul li {                        
+     background: gray;
+     display: block;                 
+     color: #fff;                 
+     }
+     .nav ul li ul li:hover { 
+         background: #666; 
+        } 
+     .nav ul li:hover ul {                 
+     display: block;               
+     left :0px;                
+     }
+	 header{
+		background-color: rgb(130, 189, 214);
+		height: 400px;
+	}
+
+/* Projects section */
+
+.projects {
+	padding: 2em 1em 1em;
+	background: #3E454C;
+}
+
+.projects ul {
+	margin: 0;
+	padding: 0;
+}
+
+.projects li {
+	margin-bottom: 1em;
+	background: white;
+	list-style-type: none;
+}
+
+.project {
+	padding: 1.5em;
+}
+
+.projects img {
+	display: block;
+	border: 0;
+	width: 300px;
+	height: auto;
+	align-items: center;
+}
+
+
+/* Skills section */
+.skills {
+	padding: 2em 1em 1em;
+	background: #3E454C;
+}
+.skills ul {
+	margin: 0;
+	padding: 0;
+}
+
+.skills li {
+	margin-bottom: 1em;
+	background: white;
+	list-style-type: none;
+}
+
+.skill {
+	padding: 1.5em;
+}
+/*Footer--------------------*/
+footer{
+    background-color: rgb(130, 189, 214);
+    
+}
+li > a {
+    text-decoration: none;
+    color: black;
+}
+li > a:hover{
+    color: aliceblue;
+}
+.contact-list {
+    list-style-type:none;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+Responsive
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+
+		.projects ul {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.projects li {
+			width: 48%;
+		}
+
+	}
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
